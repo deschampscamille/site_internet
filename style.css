@@ -1,12 +1,46 @@
-nav a {
-	text-decoration: none;
-	color: #181818;
-	font-size: 24px;
-	font-style: bold;
+/* Style global */
+
+h1 {
 	font-family: 'Lobster', cursive;
+	color: #96EACE;
+	margin-left: 180px;
+	font-size: 30px;
+	font-weight: 200;
 }
 
-nav a:hover {
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+	line-height: 1.6;
+	margin: 0px;
+	text-align: justify;
+}
+
+/* Contenu barre de navigation Bootstrap*/
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: white;
+    background-color: #96EACE;
+   }
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 10%;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #181818;
+}
+
+.navbar-nav {
+    margin: 0px;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    padding-right: 2%;
+    padding-left: 2%;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	opacity: 0.5;
 }
 
@@ -18,18 +52,8 @@ nav a:hover {
 	color:#464442;
 }
 
-header {
-	background-color: #96EACE;
-	text-align: center;
-	position: fixed;
-	float: top;
-	width: 100%;
-	height: 60px;
-	top:-5px;
-	border-bottom: 1px white solid;
-	background-opacity: 50%;
-	z-index: 2;
-}
+
+/* Contenu rubrique A propos */
 
 #apropos {
 	padding-top: 55px;
@@ -41,63 +65,94 @@ header {
 	margin-left: -35px;
 }
 
+#moi {
+	border-radius: 100%;
+	margin-bottom: 2%;
+}
+
+span {
+	font-size: 20px;
+}
+
+/* Contenu rubrique Expériences + Formation*/
+
+#experiences {	
+	height: auto;
+  background: url(images/background2.jpg) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 5px;
+	padding-top: 3%;	
+	margin-right: 0px;
+	margin-left: 0px;
+
+}
+
+.dates {
+	font-style: italic;
+	line-height: 5px;
+}
+
+.logo{
+	margin-left: 2%;
+}
+
+/* Contenu rubrique Ccompétences*/
+
+#competences {
+	height: auto;
+ 	background: url(images/background2.jpg) no-repeat center center;
+  	background-size: cover;
+  	padding-bottom: 5px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#competences p {
+	line-height: 7px;
+}
+
+
+/* Contenu rubrique Centres d'intérêt */
+
 #centres_dinteret ul {
 	list-style: none;
 	margin-left: -35px;
 	padding-bottom: 15px;
 }
 
-a:hover, a:focus {
-    text-decoration: none;
-    color: #000000;
-    }
-
-nav li {
-	display: inline;
-	margin-right: 20px;
-	margin-left: 20px;
-	
+#volley {
+	width: 100px;
 }
+
+
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
 }
-#moi {
-	border-radius: 100%;
-	margin-bottom: 30px;
-}
 
-h1 {
-	font-family: 'Lobster', cursive;
-	color: #96EACE;
-	margin-left: 180px;
-	font-size: 30px;
-	font-weight: 200;
-}
-
-
-body{
-	font-family: 'Ubuntu', sans-serif;
-	color: white;
-	line-height: 1.6;
-	margin: 0px;
-	text-align: justify;
-}
 
 section {
-  background: url(images/background1.jpg) no-repeat center center;
-  background-size: cover;
-  padding-bottom: 5px;
-	border-top: #96EACE dashed 2px;
+  	background: url(images/background1.jpg) no-repeat center center;
+  	background-size: cover;
+	padding-bottom: 5px;
+	border-top: #96EACE dashed 1px;
 	padding-left: 80px;
 	padding-right: 80px;
-
+	padding-top: 3%;
 }
+
+
+h3 {
+	font-size: 20px;
+}
+
+
+/* Contenu footer */
 
 footer {
 	text-align: right;
 	background-color: #333333;
-	border-top: #96EACE dashed 2px;
+	border-top: #96EACE dashed 1px;
 	padding-left: 20px;
 }
 
@@ -107,88 +162,90 @@ footer a {
 	margin-right: 40px;
 }
 
-#volley {
-	width: 100px;
-}
 
-#competences {
-	height: auto;
-  background: url(images/background2.jpg) no-repeat center center;
-  background-size: cover;
-  padding-bottom: 5px;
-	padding-top: 0px;
-	margin-right: 0px;
-	margin-left: 0px;
-
-}
-
-#experiences {	
-	height: auto;
-  background: url(images/background2.jpg) no-repeat center center;
-  background-size: cover;
-  padding-bottom: 5px;
-	padding-top: 0px;	
-	margin-right: 0px;
-	margin-left: 0px;
-
-}
-h3 {
-	font-size: 20px;
-}
-
-.logo{
-	margin-left: 30px;
-}
-
-span {
-	font-size: 20px;
-}
-
-.dates {
-	font-style: italic;
-	line-height: 5px;
-}
-	
-#competences p {
-	line-height: 7px;
-}
-footer a:hover {
+button:hover {
 	opacity: 0.5;
-	color:#FFFFFF;
+	color:#FFFFFF;	
 }
+
+.btn-default {
+    color: white;
+    background-color: #333333;
+    border-color: #96EACE;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+}
+
+
+h4 {
+	color: #777;
+}
+
+#cv {
+	width: 100%;
+}
+
 
 
 /* Responsive */
-@media (max-width:500px) {  /*small mobile*/
-  h1 {
-    font-size: 24px;
-    margin-left: 10px;
-  }
-  body {
-  	font-size: 12px;
-  }
-  #moi {
-  	width: 100px;
-  }
-  h3 {
-  	font-size: 18px;
-  }
-  section {
-  	padding-left: 10px;
-  	padding-right: 10px;
-  }
-#moi {
-    margin-top: 0px;
-}
 
-#volley {
-	width:80px;
-	margin-top: 0px;
- }
+@media (max-width:600px) {  /*mobile*/
+	h1 {
+	    font-size: 24px;
+	    margin-left: 10px;
+	}
 
-.logo{
-	margin-left: 20px;
-	height: 30px;
-}
+	span {
+		font-size: 16px;
+	}
+
+	body {
+	  	font-size: 12px;
+	}
+
+	#moi {
+	  	width: 100px;
+	  	margin-top: 0px;
+	}
+
+	h3 {
+	  	font-size: 18px;
+	}
+
+	section {
+	  	padding-left: 10px;
+	  	padding-right: 10px;
+	}
+
+	#volley {
+		width:80px;
+		margin-top: 0px;
+	}
+
+	.logo{
+		margin-left: 20px;
+		height: 30px;
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: white;
+		background-color: #F0F0F0;
+    }
+
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+		margin-left: 10%;
+	}
+
+	.navbar-default .navbar-nav > li > a {
+ 		color: #181818;
+	}
+
+	.navbar-nav {
+    	margin: 0px;
+    	font-size: 16px;
+	}
+	
+
 
 }
