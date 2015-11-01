@@ -217,13 +217,18 @@ h4 {
 	section {
 	  	padding-left: 10px;
 	  	padding-right: 10px;
+	  	padding-top: 35px;
+	}
+
+	#experiences {
+		padding-top: 35px;
 	}
 
 	#volley {
 		margin-top: 0px;
 	} 
 
-	.logo{
+	.logo {
 		margin-left: 20px;
 		height: 30px;
 	}
